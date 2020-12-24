@@ -20,8 +20,22 @@ class _PhoneVerificationState extends State<PhoneVerification> {
       body: Padding(
         padding: EdgeInsets.all(10),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 100.0,),
+            SizedBox(
+              height: 80.0,
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Enter Number",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
             TextField(
               keyboardType: TextInputType.phone,
               textAlign: TextAlign.left,
@@ -35,10 +49,11 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               decoration:
               kTextFieldDecoration.copyWith(
                 // For india its +91
-                hintText: 'Enter phone number with country code',
+                hintText: 'Ex. +91XXXXXXXXXX',
                 errorText: _numberError,
               ),
             ),
+            SizedBox(height: 10,),
             RoundedButton(
               title: 'Register Number',
               color: Colors.lightBlueAccent,

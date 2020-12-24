@@ -24,12 +24,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: 48.0,
+              height: 80.0,
             ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Sign Up",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            SizedBox(height: 30,),
             TextField(
               keyboardType: TextInputType.emailAddress,
               textAlign: TextAlign.center,

@@ -24,12 +24,22 @@ class _LoginScreenState extends State<LoginScreen> {
         body: Padding(
           padding: EdgeInsets.all(15.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
-                height: 48.0,
+                height: 80.0,
               ),
+              Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  "Sign In",
+                  style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 30,),
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
@@ -58,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               RoundedButton(
-                title: 'Log In',
+                title: 'Sign In',
                 color: Colors.lightBlueAccent,
                 onPressed: () async {
                   dynamic error = await authService.signIn(email, password, context);
