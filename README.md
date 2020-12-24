@@ -28,6 +28,9 @@ samples, guidance on mobile development, and a full API reference.
   
 Note: There are some problems left untouched by me (due to my end semester exam) which I could have addressed more properly.
 
+## TODO
+- Enalarge image on clicking it.
+
 ## Competitive Programming Profile
  - [CodeChef Profile](https://www.codechef.com/users/coding_abhi)
  - [Hackerrank Profile](https://www.hackerrank.com/abhishek_kaushi3)
