@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 final databaseReference = FirebaseDatabase.instance.reference().child("Images");
 
@@ -32,10 +33,7 @@ class ImageGrid extends StatelessWidget {
                         padding: EdgeInsets.all(8.0),
                         child: Card(
                           child: ClipPath(
-                            child: Image(
-                              image: CachedNetworkImageProvider(images[index]['imageUrl']),
-                              fit: BoxFit.fill,
-                            )
+                            child: Image.network(images[index]['imageUrl'],fit: BoxFit.fill,)
                           ),
                         ),
                       )
