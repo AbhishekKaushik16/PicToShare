@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "907833926775",
+    "project_id": "pictoshare-441d6",
+    "storage_bucket": "pictoshare-441d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907833926775:android:0e6650e7bf385c90259272",
+        "android_client_info": {
+          "package_name": "com.example.pic_to_share"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907833926775-k6bsllsdscuuvsbbj5t5986086j9d3um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYr18rumIK2_-2jVI8tlTjtJye3jZC8X4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907833926775-k6bsllsdscuuvsbbj5t5986086j9d3um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
